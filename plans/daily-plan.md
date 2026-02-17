@@ -3,7 +3,7 @@
 ## 📆 Semana 1: Setup y Fundamentos
 
 ### Día 1: Estructura del Proyecto
-- [ ] Crear estructura de carpetas `client/` y `server/`
+- [] Crear estructura de carpetas `client/` y `server/`
 - [ ] Inicializar proyecto frontend con Vite
 - [ ] Inicializar proyecto backend con Express
 - [ ] Configurar Git y crear repositorio
