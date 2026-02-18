@@ -12,7 +12,7 @@ const Navbar = () => {
     { label: 'New exercise', path: '/exercises/new' },
     { label: 'New Workout', path: '/workouts/new' },
     { label: 'History', path: '/history' },
-    { label: 'Statistics', path: '/statistics' },
+  { label: 'Statistics', path: '/statistics' },
   ];
 
   return (
@@ -31,7 +31,7 @@ const Navbar = () => {
               fontWeight: 'bold',
             }}
           >
-            GymTracker
+            GymLytics
           </Typography>
 
           {/* Links de navegación */}
@@ -42,9 +42,11 @@ const Navbar = () => {
                 component={RouterLink}
                 to={link.path}
                 color="inherit"
-                sx={{
-                  '&:hover': {
-                    bgcolor: 'rgba(255, 255, 255, 0.1)',
+               sx={{ 
+                    '&:hover': {
+                      color: '#020216',
+                      bgcolor: '#ffffff',
+                      borderColor: '#ffffff',
                   },
                 }}
               >
@@ -89,10 +91,14 @@ const Navbar = () => {
                   variant="outlined"
                   color="inherit"
                   sx={{
-                    borderColor: 'rgba(255, 255, 255, 0.5)',
+                    backgroundColor: '#020216',
+                    color: 'whitesmoke',
+                    borderColor: '#020216',
+                    
                     '&:hover': {
-                      borderColor: 'white',
-                      bgcolor: 'rgba(255, 255, 255, 0.1)',
+                      color: '#020216',
+                      bgcolor: '#ffffff',
+                      borderColor: '#ffffff',
                     },
                   }}
                 >
