@@ -1,8 +1,18 @@
-const Layout = () => {
+import { Container, Box } from '@mui/material';
+
+const Layout = ({ children }) => {
   return (
-    <div>
-      <h1>Layout</h1>
-    </div>
+    <Box
+      sx={{
+        minHeight: 'calc(100vh - 64px - 100px)', // viewport - navbar - footer
+        bgcolor: 'white',
+        py: 4,
+      }}
+    >
+      <Container maxWidth="lg">
+        {children}
+      </Container>
+    </Box>
   );
 };
 

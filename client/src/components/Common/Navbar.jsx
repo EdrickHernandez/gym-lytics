@@ -12,13 +12,13 @@ const Navbar = () => {
     { label: 'New exercise', path: '/exercises/new' },
     { label: 'New Workout', path: '/workouts/new' },
     { label: 'History', path: '/history' },
-  { label: 'Statistics', path: '/statistics' },
+    { label: 'Statistics', path: '/statistics' },
   ];
 
   return (
-    <AppBar position="static" sx={{ bgcolor: '#020216' }}>
-      <Container maxWidth="lg">
-        <Toolbar disableGutters>
+    <AppBar position="static" sx={{ bgcolor: '#0909d8', m: 0, p: 0 }}>
+      <Container maxWidth="lg" disableGutters>
+        <Toolbar disableGutters sx={{ minHeight: 'auto', px: 0}}>
           {/* Logo */}
           <Typography
             variant="h6"
@@ -35,7 +35,7 @@ const Navbar = () => {
           </Typography>
 
           {/* Links de navegación */}
-          <Box sx={{ display: 'flex', gap: 2 }}>
+          <Box sx={{ display: 'flex', gap: 3 }}>
             {navLinks.map((link) => (
               <Button
                 key={link.path}
@@ -68,14 +68,10 @@ const Navbar = () => {
               <>
                <Button
                   component={RouterLink}
-                  to="/login"
-                  variant="outlined"
+                  to="/login" 
                   color="red"
+                  variant='conteined'
                   sx={{
-                    backgroundColor: '#020216',
-                    color: 'whitesmoke',
-                    borderColor: '#020216',
-                    
                     '&:hover': {
                       color: '#020216',
                       bgcolor: '#ffffff',
@@ -88,13 +84,9 @@ const Navbar = () => {
                 <Button
                   component={RouterLink}
                   to="/register"
-                  variant="outlined"
+                  variant="conteined"
                   color="inherit"
                   sx={{
-                    backgroundColor: '#020216',
-                    color: 'whitesmoke',
-                    borderColor: '#020216',
-                    
                     '&:hover': {
                       color: '#020216',
                       bgcolor: '#ffffff',
