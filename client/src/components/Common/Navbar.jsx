@@ -16,7 +16,7 @@ const Navbar = () => {
   ];
 
   return (
-    <AppBar position="static" sx={{ bgcolor: '#0909d8', m: 0, p: 0 }}>
+    <AppBar position="static" sx={{ bgcolor: '#020216', m: 0, p: 0 }}>
       <Container maxWidth="lg" disableGutters>
         <Toolbar disableGutters sx={{ minHeight: 'auto', px: 0}}>
           {/* Logo */}
