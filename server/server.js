@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const sequelize = require('./models/index');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -35,9 +36,16 @@ app.use((err, req, res, next) => {
 });
 
 // Iniciar servidor
-app.listen(PORT, () => {
-  console.log(`🚀 Servidor GymTracker corriendo en http://localhost:${PORT}`);
-  console.log(`📍 Entorno: ${process.env.NODE_ENV || 'development'}`);
-});
+sequelize.authenticate()
+  .then(() => {
+    console.log('✅ Conectado a PostgreSQL');
+    app.listen(PORT, () => {
+      console.log(`🚀 Servidor GymTracker corriendo en http://localhost:${PORT}`);
+      console.log(`📍 Entorno: ${process.env.NODE_ENV || 'development'}`);
+    });
+  })
+  .catch((err) => {
+    console.error('❌ Error conectando a la base de datos:', err);
+  });
 
 module.exports = app;
