@@ -40,7 +40,7 @@ sequelize.authenticate()
   .then(() => {
     console.log('✅ Conectado a PostgreSQL');
     app.listen(PORT, () => {
-      console.log(`🚀 Servidor GymTracker corriendo en http://localhost:${PORT}`);
+      console.log(`🚀 Servidor gymlytics corriendo en http://localhost:${PORT}`);
       console.log(`📍 Entorno: ${process.env.NODE_ENV || 'development'}`);
     });
   })
