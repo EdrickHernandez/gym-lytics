@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const sequelize = require('./models/index');
+const sequelize = require('./models (sequelize)/index');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
