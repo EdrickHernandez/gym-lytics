@@ -5,27 +5,27 @@ import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 import Profile from './components/Auth/Profile';
 
+// Common components
+import Navbar from './components/Common/Navbar';
+import Footer from './components/Common/Footer';
+import PrivateRoute from './components/Common/PrivateRoute';
+import Layout from './components/Layout';
+
 // Exercise components
 import ExerciseList from './components/Exercises/ExerciseList';
 import ExerciseCard from './components/Exercises/ExerciseCard';
 import ExerciseForm from './components/Exercises/ExerciseForm';
 import ExerciseDetail from './components/Exercises/ExerciseDetail';
 
-// Workout components
-import WorkoutForm from './components/Workouts/WorkoutForm';
-import WorkoutSession from './components/Workouts/WorkoutSession';
-import SetCounter from './components/Workouts/SetCounter';
-
 // History components
 import WorkoutHistory from './components/History/WorkoutHistory';
 import ProgressChart from './components/History/ProgressChart';
 import Statistics from './components/History/Statistics';
 
-// Common components
-import Navbar from './components/Common/Navbar';
-import Footer from './components/Common/Footer';
-import PrivateRoute from './components/Common/PrivateRoute';
-import Layout from './components/Layout';
+// Workout components
+import WorkoutForm from './components/Workouts/WorkoutForm';
+import WorkoutSession from './components/Workouts/WorkoutSession';
+import SetCounter from './components/Workouts/SetCounter';
 
 function App() {
   return (
