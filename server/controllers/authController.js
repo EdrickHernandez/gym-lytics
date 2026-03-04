@@ -1,4 +1,18 @@
-const User = require('../models/User');
+const jwt = require('jsonwebtoken');
+const User = require('../models (sequelize)/User');
+
+// Función para generar JWT
+const generateToken = (user) => {
+  return jwt.sign(
+    { 
+      userId: user.id, 
+      email: user.email,
+      nombre: user.nombre 
+    },
+    process.env.JWT_SECRET,
+    { expiresIn: '24h' }
+  );
+};
 
 // Registro de usuario
 const register = async (req, res) => {
@@ -21,8 +35,12 @@ const register = async (req, res) => {
       altura,
     });
 
+    // Generar token JWT
+    const token = generateToken(user);
+
     res.status(201).json({
       message: 'Usuario registrado exitosamente',
+      token,
       user: {
         id: user.id,
         email: user.email,
@@ -52,8 +70,12 @@ const login = async (req, res) => {
       return res.status(401).json({ error: 'Email o contraseña incorrectos' });
     }
 
+    // Generar token JWT
+    const token = generateToken(user);
+
     res.json({
       message: 'Login exitoso',
+      token,
       user: {
         id: user.id,
         email: user.email,

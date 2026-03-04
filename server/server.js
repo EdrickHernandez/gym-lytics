@@ -18,8 +18,8 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'healthy', timestamp: new Date().toISOString() });
 });
 
-// Rutas de la API (se importarán más tarde)
-// app.use('/api/auth', require('./routes/authRoutes'));
+// Rutas de la API
+app.use('/api/auth', require('./routes/authRoutes'));
 // app.use('/api/exercises', require('./routes/exerciseRoutes'));
 // app.use('/api/workouts', require('./routes/workoutRoutes'));
 // app.use('/api/history', require('./routes/historyRoutes'));
