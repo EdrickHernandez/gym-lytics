@@ -3,45 +3,45 @@
 ## 📆 Semana 1: Setup y Fundamentos
 
 ### Día 1: Estructura del Proyecto
-- [] Crear estructura de carpetas `client/` y `server/`
-- [ ] Inicializar proyecto frontend con Vite
-- [ ] Inicializar proyecto backend con Express
-- [ ] Configurar Git y crear repositorio
+- [✔] Crear estructura de carpetas `client/` y `server/`
+- [✔] Inicializar proyecto frontend con Vite
+- [✔] Inicializar proyecto backend con Express
+- [✔] Configurar Git y crear repositorio
 
 ### Día 2: Frontend Base
-- [ ] Instalar dependencias frontend: React Router, Axios, Material-UI
-- [ ] Crear estructura de componentes
-- [ ] Configurar App.jsx con rutas básicas
-- [ ] Crear Navbar y Layout
+- [✔] Instalar dependencias frontend: React Router, Axios, Material-UI
+- [✔] Crear estructura de componentes
+- [✔] Configurar App.jsx con rutas básicas
+- [✔] Crear Navbar y Layout
 
 ### Día 3: Backend Base
-- [ ] Instalar dependencias backend: Express, pg, Sequelize
-- [ ] Crear archivo server.js
-- [ ] Configurar conexión a PostgreSQL
-- [ ] Crear primera ruta "/api/health"
+- [✔] Instalar dependencias backend: Express, pg, Sequelize
+- [✔] Crear archivo server.js
+- [✔] Configurar conexión a PostgreSQL
+- [✔] Crear primera ruta "/api/health"
 
 ### Día 4: Base de Datos (Schema)
-- [ ] Crear archivo database/schema.sql
-- [ ] Diseñar modelo User (email, password, nombre, edad, peso, altura)
-- [ ] Ejecutar schema en PostgreSQL local
+- [✔] Crear archivo database/schema.sql
+- [✔] Diseñar modelo User (email, password, nombre, edad, peso, altura)
+- [✔] Ejecutar schema en PostgreSQL local
 
 ---
 
 ## 📆 Semana 2: Autenticación
 
 ### Día 5: Modelo y Controlador User
-- [ ] Crear modelo User.js en Sequelize
-- [ ] Crear validadores con bcrypt
-- [ ] Crear authController.js
+- [✔] Crear modelo User.js en Sequelize
+- [✔] Crear validadores con bcrypt
+- [✔] Crear authController.js
 
 ### Día 6: Rutas de Auth API
-- [ ] Crear authRoutes.js
-- [ ] Implementar POST /register
-- [ ] Implementar POST /login
-- [ ] Configurar JWT
+- [✔] Crear authRoutes.js
+- [✔] Implementar POST /register
+- [✔] Implementar POST /login
+- [✔] Configurar JWT
 
 ### Día 7: Frontend Auth (Login/Register)
-- [ ] Crear componente Login.jsx
+- [✔] Crear componente Login.jsx
 - [ ] Crear componente Register.jsx
 - [ ] Configurar authService.js
 - [ ] Conectar con API
