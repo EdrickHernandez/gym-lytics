@@ -1,6 +1,6 @@
 Sistema de Gestión de Entrenamientos
 📋 Descripción
-GymTracker es una aplicación web para gestión de entrenamientos de gimnasio que permite a los usuarios registrar sus ejercicios, contar repeticiones, registrar pesos y visualizar su progreso histórico. Incluye una biblioteca multimedia de ejercicios con imágenes y videos demostrativos para asegurar la correcta ejecución de cada movimiento.
+GymLytics es una aplicación web para gestión de entrenamientos de gimnasio que permite a los usuarios registrar sus ejercicios, contar repeticiones, registrar pesos y visualizar su progreso histórico. Incluye una biblioteca multimedia de ejercicios con imágenes y videos demostrativos para asegurar la correcta ejecución de cada movimiento.
 
 🎯 Objetivo del MVP
 Crear una plataforma funcional donde usuarios puedan:
